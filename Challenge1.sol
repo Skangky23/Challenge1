@@ -8,8 +8,7 @@ contract VariablesContract {
     uint public numberVariable;    
     bool public conditionVariable;
     address public locationVariable;
-
-    // get and set functions for a string type variable
+    
     function setnameVariable(string memory newValue) public {
         nameVariable = newValue;
     }
@@ -17,8 +16,6 @@ contract VariablesContract {
     function getstringVariable() public view returns (string memory) {
         return nameVariable;
     }
-
-    // get and set functions for uint type variable
     function setnumberVariable(uint newValue) public {
         numberVariable = newValue;
     }
@@ -26,8 +23,6 @@ contract VariablesContract {
     function getintVariable() public view returns (uint) {
         return numberVariable;
     }
-    
-    // // get and set functions for a boolean variable
     function setconditionVariable(bool newValue) public {
         conditionVariable = newValue;
     }
@@ -35,8 +30,6 @@ contract VariablesContract {
     function getconditionVariable() public view returns (bool) {
         return conditionVariable;
     }
-    
-    // get and set functions for an address variable
     function setlocationVariable(address newValue) public {
         locationVariable = newValue;
     }
